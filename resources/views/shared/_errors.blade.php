@@ -1,9 +1,9 @@
 @if (count($errors) > 0)
     <div class="alert alert-danger">
-        <ul>
+        <dl>
             @foreach($errors->all() as $error)
-                <li>{{ $error }}</li>
+                <dt>*{{ $error }}</dt>
             @endforeach
-        </ul>
+        </dl>
     </div>
 @endif
